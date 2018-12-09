@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from './views/home/index.vue';
 import Community from './views/community/index.vue';
 import My from './views/my/index.vue';
+import Chat from './views/chat/index.vue';
 
 Vue.use(Router);
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/my',
       name: 'my',
       component: My,
+    },
+    {
+      path: '/chat',
+      name: 'chat',
+      component: Chat,
     },
     {
       path: '/about',
