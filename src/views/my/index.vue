@@ -1,20 +1,65 @@
 <template>
   <div class="my">
-    <div class="search">
-      <div class="search-input fl">
-      <!-- <p class="push fl">+</p> -->
-      </div>
+    <div class="header">
+      <img class="back fl" src="@/assets/my/ico-back.png" alt="">
+      <img class="seting fr" src="@/assets/my/seting.png" alt="">
     </div>
-    <!-- nav -->
-    <div class="nav">
-      <ul class="nav-list">
-        <li class="nav-item check">热门</li>
-        <li class="nav-item">关注</li>
-      </ul>
+    <!-- info -->
+    <div class="my-info">
+      <div class="info">
+        <p class="avatar-img"></p>
+        <p class="nickname">瞌睡</p>
+        <p>江苏 &nbsp; 男</p>
+        <p>简介：素食主义者</p>
+        <p class="count">
+          <span>关注 121</span>
+          <span class="gap"></span>
+          <span>粉丝 774</span>
+        </p>
+      </div>
     </div>
     <!-- content -->
     <div class="content">
-      test
+      <div class="my-order">
+        <h4>我的订单</h4>
+        <ul>
+          <li>
+            <img src="@/assets/my/ico-pay.png" alt="">
+            <br/>
+            <span>待支付</span>
+          </li>
+          <li>
+            <img src="@/assets/my/ico-consumption.png" alt="">
+            <br/>
+            <span>待消费</span>
+          </li>
+          <li>
+            <img src="@/assets/my/ico-refund.png" alt="">
+            <br/>
+            <span>待退款</span>
+          </li>
+        </ul>
+      </div>
+      <div class="my-community">
+        <h4>我的社区</h4>
+        <ul>
+          <li>
+            <img src="@/assets/my/ico-release.png" alt="">
+            <br/>
+            <span>发布</span>
+          </li>
+          <li>
+            <img src="@/assets/my/like.png" alt="">
+            <br/>
+            <span>点赞</span>
+          </li>
+          <li>
+            <img src="@/assets/my/ico-collect.png" alt="">
+            <br/>
+            <span>收藏</span>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- footer -->
     <div class="tab-bar">
