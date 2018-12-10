@@ -5,11 +5,13 @@
     </div>
     <!-- content -->
     <div class="content">
-      <p>test</p>
+      <p>test testtesttesttesttesttesttesttesttesttesttesttest</p>
       <p>6666</p>
     </div>
     <div class="search">
-      <div class="search-input fl"></div>
+      <!-- <div class="search-input fl"></div> -->
+      <textarea class="search-input fl"></textarea>
+      <p class="fr">send</p>
     </div>
     <!-- footer -->
     <!-- <div class="tab-bar">
@@ -39,7 +41,7 @@
   export default Chat;
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import './index.scss';
 </style>
 
