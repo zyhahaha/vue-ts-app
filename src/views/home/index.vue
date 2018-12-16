@@ -48,12 +48,12 @@
           <br/>
           首页
         </p>
-        <p>
+        <p @click="$router.push('community')">
           <img src="@/assets/home/tab-ico-community-nor.png" alt="">
           <br/>
           社区
         </p>
-        <p>
+        <p @click="$router.push('my')">
           <img src="@/assets/home/tab-ico-me-nor.png" alt="">
           <br/>
           我的

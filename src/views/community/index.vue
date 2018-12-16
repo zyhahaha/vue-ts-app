@@ -19,7 +19,7 @@
     <!-- footer -->
     <div class="tab-bar">
       <div class="tab-wrap">
-        <p class="tab-home">
+        <p @click="$router.push('/')" class="tab-home">
           <img src="@/assets/home/tab-ico-home-pre.png" alt="">
           <br/>
           首页
@@ -29,7 +29,7 @@
           <br/>
           社区
         </p>
-        <p>
+        <p @click="$router.push('my')">
           <img src="@/assets/home/tab-ico-me-nor.png" alt="">
           <br/>
           我的

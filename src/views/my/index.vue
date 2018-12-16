@@ -64,12 +64,12 @@
     <!-- footer -->
     <div class="tab-bar">
       <div class="tab-wrap">
-        <p class="tab-home">
+        <p @click="$router.push('/')" class="tab-home">
           <img src="@/assets/home/tab-ico-home-pre.png" alt="">
           <br/>
           首页
         </p>
-        <p>
+        <p @click="$router.push('community')">
           <img src="@/assets/home/tab-ico-community-nor.png" alt="">
           <br/>
           社区
