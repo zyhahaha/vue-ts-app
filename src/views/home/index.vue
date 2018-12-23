@@ -48,7 +48,7 @@
           <br/>
           首页
         </p>
-        <p @click="alert('null')">
+        <p onclick="alert('null')">
           <img src="@/assets/home/tab-ico-community-nor.png" alt="">
           <br/>
           社区
