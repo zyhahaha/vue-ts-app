@@ -48,7 +48,7 @@
           <br/>
           首页
         </p>
-        <p @click="$router.push('community')">
+        <p @click="alert('null')">
           <img src="@/assets/home/tab-ico-community-nor.png" alt="">
           <br/>
           社区

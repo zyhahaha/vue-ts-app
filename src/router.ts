@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/home/index.vue';
-import Community from './views/community/index.vue';
+// import Community from './views/community/index.vue';
 import My from './views/my/index.vue';
 import Chat from './views/chat/index.vue';
 
@@ -16,11 +16,11 @@ export default new Router({
       name: 'home',
       component: Home,
     },
-    {
-      path: '/community',
-      name: 'community',
-      component: Community,
-    },
+    // {
+    //   path: '/community',
+    //   name: 'community',
+    //   component: Community,
+    // },
     {
       path: '/my',
       name: 'my',
