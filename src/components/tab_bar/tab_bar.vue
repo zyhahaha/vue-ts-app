@@ -1,7 +1,7 @@
 <template>
   <div class="tab-bar">
     <div class="tab-wrap">
-      <p class="tab-home">
+      <p class="tab-home" @click="$router.push('home')">
         <img src="@/assets/home/tab-ico-home-pre.png" alt>
         <br>首页
       </p>
@@ -22,7 +22,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 export default class TabBar extends Vue {
   private created() {
-    alert('1234');
+    // alert('1234');
   }
 }
 </script>
