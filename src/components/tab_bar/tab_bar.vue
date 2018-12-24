@@ -1,0 +1,53 @@
+<template>
+  <div class="tab-bar">
+    <div class="tab-wrap">
+      <p class="tab-home">
+        <img src="@/assets/home/tab-ico-home-pre.png" alt>
+        <br>首页
+      </p>
+      <p onclick="alert('null')">
+        <img src="@/assets/home/tab-ico-community-nor.png" alt>
+        <br>社区
+      </p>
+      <p @click="$router.push('my')">
+        <img src="@/assets/home/tab-ico-me-nor.png" alt>
+        <br>我的
+      </p>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+
+export default class TabBar extends Vue {
+  private created() {
+    alert('1234');
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.tab-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+  opacity: 0.7;
+  font-size: 0.24rem;
+  background-color: #ccc;
+  .tab-wrap {
+    display: flex;
+    p {
+      flex: 1;
+    }
+    img {
+      width: 0.56rem;
+    }
+    .tab-home {
+    }
+  }
+}
+</style>
+
