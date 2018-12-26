@@ -4,7 +4,7 @@
     <p class="item-title">{{item.title}}</p>
     <p class="item-summary">{{item.summary}}</p>
     <p class="item-stat">
-      {{item.item}}
+      {{item.statDate}}
       <span class="fr">{{item.statCost}}</span>
     </p>
   </li>
