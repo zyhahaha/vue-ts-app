@@ -1,5 +1,5 @@
 <template>
-  <div class="my-info">
+  <div class="my-info-test">
     <div class="info">
       <p class="avatar-img"></p>
       <p class="nickname">瞌睡</p>
@@ -17,15 +17,11 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
-export default class MyInfo extends Vue {
-  created(){
-    // alert(1234)
-  }
-}
+export default class MyInTest extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-.my-info {
+.my-info-test {
   margin-bottom: 0.28rem;
   padding-bottom: 0.14rem;
   text-align: center;

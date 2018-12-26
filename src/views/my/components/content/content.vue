@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content-test">
     <div class="my-order">
       <h4>我的订单</h4>
       <ul>
@@ -46,11 +46,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-export default class Content extends Vue {
-  created() {
-    // alert(1234)
-  }
-}
+export default class MyContent extends Vue {}
 </script>
 
 <style lang="scss" scoped>

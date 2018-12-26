@@ -1,7 +1,7 @@
 <template>
   <div class="tab-bar">
     <div class="tab-wrap">
-      <p class="tab-home" @click="$router.push('home')">
+      <p class="tab-home" @click="$router.push('/')">
         <img src="@/assets/home/tab-ico-home-pre.png" alt>
         <br>首页
       </p>

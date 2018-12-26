@@ -1,7 +1,3 @@
 import { Component, Vue } from 'vue-property-decorator';
 
-export default class MyInfo extends Vue {
-  created(){
-    // alert(1234)
-  }
-}
+export default class MyInTest extends Vue {}
