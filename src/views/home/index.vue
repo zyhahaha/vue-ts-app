@@ -8,12 +8,7 @@
     <!-- nav -->
     <div class="nav-wrap">
       <ul class="nav-list">
-        <li class="nav-item check fl">推荐</li>
-        <li class="nav-item fl">展览</li>
-        <li class="nav-item fl">演唱会</li>
-        <li class="nav-item fl">活动</li>
-        <li class="nav-item fl">DIY</li>
-        <li class="nav-item fl">景点门票</li>
+        <li class="nav-item fl" :class="{check: nav.code === 'a'}" :key="key" v-for="(nav, key) in navList">{{nav.name}}</li>
       </ul>
     </div>
     <!-- banner -->
@@ -29,7 +24,7 @@
       </div>
       <!-- item -->
       <ul class="hot-list">
-        <ActivityItem></ActivityItem>
+        <ActivityItem :key="key" v-for="(item, key) in activityList" :item="item"></ActivityItem>
       </ul>
     </div>
     <!-- footer -->

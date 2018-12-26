@@ -2,13 +2,13 @@
   <div class="my-info">
     <div class="info">
       <p class="avatar-img"></p>
-      <p class="nickname">瞌睡</p>
-      <p>江苏 &nbsp; 男</p>
-      <p>简介：素食主义者</p>
+      <p class="nickname">{{infoData.nickname}}</p>
+      <p>{{infoData.city}} &nbsp; {{infoData.gender}}</p>
+      <p>简介：{{infoData.summary}}</p>
       <p class="count">
-        <span>关注 121</span>
+        <span>关注 {{infoData.watchNum}}</span>
         <span class="gap"></span>
-        <span>粉丝 774</span>
+        <span>粉丝 {{infoData.fansNum}}</span>
       </p>
     </div>
   </div>

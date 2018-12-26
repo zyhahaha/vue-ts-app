@@ -1,19 +1,22 @@
 <template>
   <li class="hot-item">
     <p class="item-img"></p>
-    <p class="item-title">WOOY艺术展</p>
-    <p class="item-summary">上海浦东区mall广场</p>
+    <p class="item-title">{{itemData.title}}</p>
+    <p class="item-summary">{{itemData.summary}}</p>
     <p class="item-stat">
-      10.16-10.26
-      <span class="fr">免费</span>
+      {{itemData.item}}
+      <span class="fr">{{itemData.statCost}}</span>
     </p>
   </li>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Prop } from "vue-property-decorator";
 @Component
-export default class ActivityItem extends Vue {}
+export default class ActivityItem extends Vue {
+  @Prop({default: {}})
+  itemData!: object;
+}
 </script>
 
 <style lang="scss" scoped>
