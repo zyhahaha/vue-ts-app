@@ -1,5 +1,5 @@
 <template>
-  <div class="my-info-test">
+  <div class="my-info">
     <div class="info">
       <p class="avatar-img"></p>
       <p class="nickname">瞌睡</p>
@@ -15,13 +15,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-
-export default class MyInTest extends Vue {}
+import MyInfo from './my_info_ctrl';
+export default MyInfo;
 </script>
 
 <style lang="scss" scoped>
-.my-info-test {
+.my-info {
   margin-bottom: 0.28rem;
   padding-bottom: 0.14rem;
   text-align: center;

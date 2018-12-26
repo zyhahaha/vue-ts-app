@@ -5,7 +5,9 @@
       <img class="seting fr" src="@/assets/my/seting.png" alt="">
     </div>
     <!-- info -->
+    <MyInfo></MyInfo>
     <!-- content -->
+    <MyContent></MyContent>
     <!-- footer -->
     <TabBar></TabBar>
   </div>

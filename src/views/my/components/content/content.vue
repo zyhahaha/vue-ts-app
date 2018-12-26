@@ -1,5 +1,5 @@
 <template>
-  <div class="content-test">
+  <div class="my-content">
     <div class="my-order">
       <h4>我的订单</h4>
       <ul>
@@ -44,9 +44,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-
-export default class MyContent extends Vue {}
+import MyContent from './content_ctrl';
+export default MyContent;
 </script>
 
 <style lang="scss" scoped>

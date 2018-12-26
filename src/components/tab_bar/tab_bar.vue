@@ -20,6 +20,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
+@Component
 export default class TabBar extends Vue {
   private created() {
     // alert('1234');
