@@ -1,11 +1,11 @@
 <template>
   <li class="hot-item">
     <p class="item-img"></p>
-    <p class="item-title">{{itemData.title}}</p>
-    <p class="item-summary">{{itemData.summary}}</p>
+    <p class="item-title">{{item.title}}</p>
+    <p class="item-summary">{{item.summary}}</p>
     <p class="item-stat">
-      {{itemData.item}}
-      <span class="fr">{{itemData.statCost}}</span>
+      {{item.item}}
+      <span class="fr">{{item.statCost}}</span>
     </p>
   </li>
 </template>
@@ -15,7 +15,7 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 @Component
 export default class ActivityItem extends Vue {
   @Prop({default: {}})
-  itemData!: object;
+  item!: object;
 }
 </script>
 
