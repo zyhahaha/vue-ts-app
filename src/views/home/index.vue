@@ -29,15 +29,7 @@
       </div>
       <!-- item -->
       <ul class="hot-list">
-        <li class="hot-item">
-          <p class="item-img"></p>
-          <p class="item-title">WOOY艺术展 </p>
-          <p class="item-summary">上海浦东区mall广场</p>
-          <p class="item-stat">
-            10.16-10.26
-            <span class="fr">免费</span>
-          </p>
-        </li>
+        <ActivityItem></ActivityItem>
       </ul>
     </div>
     <!-- footer -->
