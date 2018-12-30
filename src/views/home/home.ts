@@ -3,7 +3,8 @@ import TabBar from '@/components/tab_bar/tab_bar.vue';
 import ActivityItem from './components/activity_item/activity_item.vue';
 
 // api
-import {homeNavData, homeActivityDate} from '@/assets/api/api';
+import axios from 'axios';
+// import {homeNavData, homeActivityDate} from '@/assets/api/api';
 
 @Component({
   components: {
@@ -12,12 +13,18 @@ import {homeNavData, homeActivityDate} from '@/assets/api/api';
   },
 })
 export default class Home extends Vue {
-  private homeNavData: object = homeNavData;
-  private homeActivityDate: object = homeActivityDate;
-  private navList!: Array<object>;
-  private activityList!: Array<object>;
+  // private homeNavData: object = homeNavData;
+  // private homeActivityDate: object = homeActivityDate;
+  private navList: Array<object> = [];
+  private activityList: Array<object> = [];
   private created(){
-    this.navList = homeNavData.list;
-    this.activityList = homeActivityDate.list;
+    axios.get('http://localhost:8088/homeNavData').then(res => {
+      this.navList = res.data.data.list;
+    });
+    axios.get('http://localhost:8088/homeNavData').then(res => {
+      this.activityList = res.data.data.list;
+    });
+    // this.navList = homeNavData.list;
+    // this.activityList = homeActivityDate.list;
   }
 }
