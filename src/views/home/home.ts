@@ -21,7 +21,7 @@ export default class Home extends Vue {
     axios.get('http://localhost:8088/homeNavData').then(res => {
       this.navList = res.data.data.list;
     });
-    axios.get('http://localhost:8088/homeNavData').then(res => {
+    axios.get('http://localhost:8088/homeActivityDate').then(res => {
       this.activityList = res.data.data.list;
     });
     // this.navList = homeNavData.list;
