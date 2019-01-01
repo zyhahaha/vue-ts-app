@@ -3,6 +3,7 @@
     <div class="search">
       <p class="fl">上海</p>
       <div class="search-input fl">
+        搜索你想要的
       </div>
     </div>
     <!-- nav -->
@@ -24,7 +25,7 @@
       </div>
       <!-- item -->
       <ul class="hot-list">
-        <ActivityItem :key="key" v-for="(item, key) in activityList" :item="item"></ActivityItem>
+        <ActivityItem :class="{fl: (key % 2 === 0), fr: (key % 2 === 1)}" :key="key" v-for="(item, key) in activityList" :item="item"></ActivityItem>
       </ul>
     </div>
     <!-- footer -->

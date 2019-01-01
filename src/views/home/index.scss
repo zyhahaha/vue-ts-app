@@ -11,11 +11,17 @@
     line-height: 0.64rem;
   }
   .search-input{
-    width: 5.04rem;
+    width: 5.65rem;
     height: 0.64rem;
     margin-left: 0.6rem;
-    background-color: #dedede;
-    border-radius: 0.64rem;
+    background-color: #eaeaea;
+    border-radius: 0.12rem;
+    // test
+    font-size: 0.24rem;
+    color: #999999;
+    line-height: 0.64rem;
+    text-align: left;
+    text-indent: 0.5rem;
   }
 }
 // nav
@@ -65,5 +71,7 @@
     }
   }
   .hot-list{
+    overflow: hidden;
+    margin-bottom: 1rem;
   }
 }

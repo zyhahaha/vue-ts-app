@@ -21,11 +21,18 @@ export default class ActivityItem extends Vue {
 
 <style lang="scss" scoped>
 .hot-item {
-  width: 50%;
+  width: 45%;
+  padding-bottom: 0.4rem;
   text-align: left;
+  .fl {
+    float: left;
+  }
+  .fr {
+    float: right;
+  }
   .item-img {
     display: inline-block;
-    width: 3.2rem;
+    width: 100%;
     height: 2.8rem;
     border-radius: 0.1rem;
     background-color: #ccc;

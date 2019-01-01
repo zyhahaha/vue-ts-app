@@ -30,14 +30,15 @@ export default class TabBar extends Vue {
 
 <style lang="scss" scoped>
 .tab-bar {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 1rem;
-  opacity: 0.7;
+  border-top: 1px solid #ccc;
+  // opacity: 0.7;
   font-size: 0.24rem;
-  background-color: #ccc;
+  background-color: #fff;
   .tab-wrap {
     display: flex;
     p {
