@@ -18,10 +18,10 @@ export default class Home extends Vue {
   private navList: Array<object> = [];
   private activityList: Array<object> = [];
   private created(){
-    axios.get('http://localhost:8088/homeNavData').then(res => {
+    axios.get('http://192.168.1.11:8088/homeNavData').then(res => {
       this.navList = res.data.data.list;
     });
-    axios.get('http://localhost:8088/homeActivityDate').then(res => {
+    axios.get('http://192.168.1.11:8088/homeActivityDate').then(res => {
       this.activityList = res.data.data.list;
     });
     // this.navList = homeNavData.list;
