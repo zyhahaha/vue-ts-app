@@ -4,7 +4,7 @@
 ```
 
 ```
-  未使用: vuex
+  未使用: vuex, register-service-worker, PWA
 ```
 
 ```
