@@ -1,3 +1,16 @@
+### 技术栈
+```
+  主要: vue, typescript, axios, vue-router, sass
+```
+
+```
+  未使用: vuex
+```
+
+```
+  ts + vue插件: vue-property-decorator, vue-class-component
+```
+
 # my-app
 
 ## Project setup
