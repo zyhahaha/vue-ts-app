@@ -16,13 +16,13 @@ import ActivityItem from './components/activity_item/activity_item.vue';
 export default class Home extends Vue {
   // private homeNavData: object = homeNavData;
   // private homeActivityDate: object = homeActivityDate;
-  private navList: Array<object> = [];
-  private activityList: Array<object> = [];
-  private created(){
-    http.get('/homeNavData').then(res => {
+  private navList: object[] = [];
+  private activityList: object[] = [];
+  private created() {
+    http.get('/homeNavData').then((res) => {
       this.navList = res.data.data.list;
     });
-    http.get('/homeActivityDate').then(res => {
+    http.get('/homeActivityDate').then((res) => {
       this.activityList = res.data.data.list;
     });
     // this.navList = homeNavData.list;

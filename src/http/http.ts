@@ -11,33 +11,33 @@ const http = axios.create({
   baseURL: 'http://localhost:8088',
   timeout: 10000,
 });
-if(!sessionStorage.httpTimestamp){
+if (!sessionStorage.httpTimestamp) {
   sessionStorage.httpTimestamp = new Date().getTime();
-}else if(new Date().getTime() - sessionStorage.httpTimestamp > 86400000){
+} else if (new Date().getTime() - sessionStorage.httpTimestamp > 86400000) {
   sessionStorage.httpTimestamp = new Date().getTime();
 }
- 
+
 http.interceptors.request.use((config) => {
   // Indicator.open({
   //   text: '加载中...',
   //   spinnerType: 'snake'
   // });
   return config;
-}, err =>{
+}, (err) => {
   // Indicator.close();
-  return Promise.reject(err)
+  return Promise.reject(err);
 } );
 
 
 // 对数据返回进行拦截
 http.interceptors.response.use((res) => {
   // Indicator.close();
-  return res
-}, error => {
+  return res;
+}, (error) => {
   // 返回错误统一处理, vuex内无需另行处理，比如自身网络错误等
   // if(navigator.onLine)
-  return Promise.reject(error)
-})
+  return Promise.reject(error);
+});
 // var errorLog = 0;
 // APP.errorLog = function(error){
 //   http({
@@ -50,4 +50,4 @@ http.interceptors.response.use((res) => {
 //   });
 // }
 
-export default http
+export default http;

@@ -11,11 +11,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { Component, Vue, Prop } from 'vue-property-decorator';
 @Component
 export default class ActivityItem extends Vue {
   @Prop({default: {}})
-  item!: object;
+  public item!: object;
 }
 </script>
 

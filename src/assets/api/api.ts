@@ -1,44 +1,44 @@
-let homeNavData = {
+const homeNavData = {
   list: [
     {
       code: 'a',
-      name: '推荐'
+      name: '推荐',
     },
     {
       code: 'b',
-      name: '展览'
+      name: '展览',
     },
     {
       code: 'c',
-      name: '演唱会'
+      name: '演唱会',
     },
     {
       code: 'd',
-      name: '活动'
+      name: '活动',
     },
     {
       code: 'e',
-      name: 'DIY'
+      name: 'DIY',
     },
     {
       code: 'f',
-      name: '景点门票'
-    }
-  ]
-}
+      name: '景点门票',
+    },
+  ],
+};
 
-let homeActivityDate = {
+const homeActivityDate = {
   list: [
     {
       title: 'WOOY艺术展',
       summary: '上海浦东区mall广场',
       statDate: '10.16-10.26',
-      statCost: '免费'
-    }
-  ]
-}
+      statCost: '免费',
+    },
+  ],
+};
 
-let myInfoData = {
+const myInfoData = {
   data: {
     nickname: '瞌睡',
     city: '江苏',
@@ -46,11 +46,11 @@ let myInfoData = {
     summary: '简介：素食主义者',
     watchNum: 123,
     fansNum: 566,
-  }
-}
+  },
+};
 
 export {
   homeNavData,
   homeActivityDate,
-  myInfoData
-}
+  myInfoData,
+};

@@ -9,8 +9,8 @@ export default class MyInfo extends Vue {
   // private myInfoData: object = myInfoData;
   private infoData: object = {};
 
-  private created(){
-    http.get('/myInfoData').then(res => {
+  private created() {
+    http.get('/myInfoData').then((res) => {
       this.infoData = res.data.data.data;
     });
     // this.infoData = myInfoData.data;
