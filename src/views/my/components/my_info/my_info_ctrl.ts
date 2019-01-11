@@ -7,9 +7,9 @@ import http from '@/http/http.ts';
 @Component
 export default class MyInfo extends Vue {
   // private myInfoData: object = myInfoData;
-  private infoData: object = {};
+  public infoData: object = {};
 
-  private created() {
+  public created() {
     http.get('/myInfoData').then((res) => {
       this.infoData = res.data.data.data;
     });
