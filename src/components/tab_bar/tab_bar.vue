@@ -3,6 +3,8 @@
     <div class="tab-wrap">
       <p class="tab-home" @click="$router.push('/')">
         <img src="@/assets/home/tab-ico-home-pre.png" alt>
+        <!-- <img v-if="path === '/'" src="@/assets/home/tab-ico-home-pre.png" alt>
+        <img v-else src="@/assets/home/tab-ico-home-nor.png" alt> -->
         <br>首页
       </p>
       <p onclick="alert('null')">
@@ -11,6 +13,8 @@
       </p>
       <p @click="$router.push('my')">
         <img src="@/assets/home/tab-ico-me-nor.png" alt>
+        <!-- <img v-if="path === '/my'" src="@/assets/home/tab-ico-me-pre.png" alt>
+        <img v-else src="@/assets/home/tab-ico-me-nor.png" alt> -->
         <br>我的
       </p>
     </div>
@@ -18,10 +22,16 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class TabBar extends Vue {
+  public data() {
+    return {
+      path: this.$route.path
+    };
+  }
+
   private created() {
     // alert('1234');
   }
@@ -39,6 +49,9 @@ export default class TabBar extends Vue {
   // opacity: 0.7;
   font-size: 0.24rem;
   background-color: #fff;
+  // img {
+  //   width: 0.28rem;
+  // }
   .tab-wrap {
     display: flex;
     p {
