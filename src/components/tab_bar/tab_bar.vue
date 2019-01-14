@@ -61,6 +61,7 @@ export default class TabBar extends Vue {
       width: 0.56rem;
     }
     .tab-home {
+      
     }
   }
 }
