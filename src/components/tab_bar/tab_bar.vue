@@ -33,7 +33,6 @@ export default class TabBar extends Vue {
   }
 
   private created() {
-    // alert('1234');
   }
 }
 </script>
